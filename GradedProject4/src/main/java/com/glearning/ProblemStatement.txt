@@ -1,0 +1,39 @@
+	1. Your application should be able to add roles in the database dynamically in the database.
+	http://localhost:8080/api/role 
+	{"name":"ADMIN"}
+	{"name":"USER"}
+
+	2. Your application should be able to add Users in the database which can be used for authentication purposes.
+	http://localhost:8080/api/user
+	{"username":"ADMIN","password":"ADMIN"}
+	{"username":"USER","password":"USER"}
+	
+	#Lets verify roles and users information with the help of mySql
+
+	3. Now Your application should be able to add employees data in the database if and only if the authenticated user is ADMIN.
+	http://localhost:8080/api/employees
+    {"firstName":"KAILASH","lastName":"YADAV","email":"satyamy866@gmail.com"}
+	{"firstName":"RAJAN","lastName":"YADAV","email":"rajan@gmail.com"}
+	{"firstName":"ANKIT","lastName":"YADAV","email":"ankit@gmail.com"}
+	{"firstName":"KAILASH","lastName":"SHARMA","email":"sharmaKailash@gmail.com"}
+
+	4. Your application should provide an end-point to list all the employees stored in the database.
+	http://localhost:8080/api/employees   
+
+	5. Your application should provide end-point to fetch or get an employee record specifically based on the id of that employee.
+	http://localhost:8080/api/employees/2
+	{"firstName":"RAJAN","lastName":"YADAV","email":"rajanYadav@gmail.com"}
+	
+	6. Your application should provide an end-point to update an existing employee record with the given updated JSON object.
+	http://localhost:8080/api/employees/2
+
+	7. Your application should also provide an end-point to delete an existing employee record based on the id of the employee-
+	http://localhost:8080/api/employees/2
+
+	8.  Your application should provide an end-point to fetch an employee by his/her first name and if found more than one record then list them all-
+	http://localhost:8080/api/employees/search/Kailash
+
+	9. Your application should be able to list all employee records sorted on their first name in either ascending order or descending order 
+	http://localhost:8080/api/employees/sort?order=asc
+				OR
+	http://localhost:8080/api/employees/sort?order=desc 
