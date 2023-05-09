@@ -12,7 +12,7 @@
 
 	3. Now Your application should be able to add employees data in the database if and only if the authenticated user is ADMIN.
 	http://localhost:8080/api/employees
-    {"firstName":"KAILASH","lastName":"YADAV","email":"satyamy866@gmail.com"}
+    	{"firstName":"KAILASH","lastName":"YADAV","email":"satyamy866@gmail.com"}
 	{"firstName":"RAJAN","lastName":"YADAV","email":"rajan@gmail.com"}
 	{"firstName":"ANKIT","lastName":"YADAV","email":"ankit@gmail.com"}
 	{"firstName":"KAILASH","lastName":"SHARMA","email":"sharmaKailash@gmail.com"}
